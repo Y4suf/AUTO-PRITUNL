@@ -47,7 +47,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/asyrafazhan/AUTO-PRITUNL/master/conf/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by AsyrafAzhan </pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by Grados Rawk </pre>" > /home/vps/public_html/index.html
 echo "<?php phpinfo(); ?>" > /home/vps/public_html/info.php
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/asyrafazhan/AUTO-PRITUNL/master/conf/vps.conf"
 sed -i 's/listen = \/var\/run\/php5-fpm.sock/listen = 127.0.0.1:9000/g' /etc/php5/fpm/pool.d/www.conf
@@ -80,9 +80,8 @@ echo "-Pritunl"
 echo "-MongoDB"
 echo "-Vnstat"
 echo "-Web Server"
-echo "-Squid Proxy Port 65000/60020"
-echo "Autoscript Ini Daripada AsyrafAzhan"
-echo "Telegram @aaron_3796"
+echo "-Squid Proxy Port 8080/65000"
+echo "Telegram @kukikiskukukakiku"
 echo "TimeZone   :  Malaysia"
 echo "Vnstat     :  http://$MYIP:81/vnstat"
 echo "Pritunl    :  https://$MYIP"
